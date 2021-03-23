@@ -27,7 +27,7 @@ public class CategoryTester {
     private static Connection CONN;
     
     @BeforeAll
-    public static void setUp() {
+    public static void setUpClass() {
         try {
             CONN = JdbcUtils.getConn();
         } catch (SQLException ex) {
@@ -36,7 +36,7 @@ public class CategoryTester {
     }
     
     @AfterAll
-    public static void tearDown() {
+    public static void tearDownClass() {
         if (CONN != null)
             try {
                 CONN.close();

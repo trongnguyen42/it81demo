@@ -19,6 +19,7 @@ import java.util.List;
  */
 public class CategoryService {
     private Connection conn;
+    
     public CategoryService(Connection conn) {
         this.conn = conn;
     }
