@@ -14,6 +14,13 @@ public class Category {
     private String name;
     private String description;
 
+    @Override
+    public String toString() {
+        return this.name;
+    }
+    
+    
+
     /**
      * @return the id
      */
