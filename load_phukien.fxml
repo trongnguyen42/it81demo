@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F7B5B0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dht.saleapp.LoadController">
+   <left>
+      <VBox alignment="CENTER" prefHeight="720.0" prefWidth="153.0" spacing="10.0" style="-fx-background-color: #045E7A;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton alignment="TOP_LEFT" prefHeight="61.0" prefWidth="153.0" stylesheets="file:/D:/it81demo-main/SaleApp/src/main/resources/com/dht/saleapp/style.css" text="Áo" textFill="#797979">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="41.0">
+                     <image>
+                        <Image url="file:/D:/it81demo-main/SaleApp/src/main/resources/img/shirt_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" onAction="#clicked" prefHeight="61.0" prefWidth="153.0" text="Quần" textFill="#797979">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="41.0">
+                     <image>
+                        <Image url="file:/D:/it81demo-main/SaleApp/src/main/resources/img/trousers_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn" alignment="TOP_LEFT" onAction="#clicked" prefHeight="61.0" prefWidth="157.0" ripplerFill="BLACK" text="Phụ Kiện" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="41.0">
+                     <image>
+                        <Image url="@../../../img/vintage_glasses_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" prefHeight="61.0" prefWidth="153.0" text="Đăng xuất" textFill="#797979">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="41.0">
+                     <image>
+                        <Image url="file:/D:/it81demo-main/SaleApp/src/main/resources/img/logout_rounded_left_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="1067.0">
+               <children>
+                  <Button minWidth="47.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="58.0" style="-fx-background-color: rgba(0,0,0,0);">
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/back_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" minWidth="47.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="58.0" style="-fx-background-color: rgba(0,0,0,0);">
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/forward_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Button>
+                  <HBox alignment="CENTER" prefHeight="42.0" prefWidth="302.0" style="-fx-border-color: #045E7A;">
+                     <children>
+                        <ImageView fitHeight="43.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/D:/it81demo-main/SaleApp/src/main/resources/img/search_50px.png" />
+                           </image>
+                        </ImageView>
+                        <TextField prefHeight="30.0" prefWidth="248.0" promptText="Nhập sản phẩm cần tìm" style="-fx-background-color: rgba(0,0,0,0);">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="53.0" prefWidth="528.0" />
+                  <ImageView fitHeight="36.0" fitWidth="29.0" layoutX="956.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/user_50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+                  <Label prefHeight="25.0" prefWidth="72.0" text="Ultimate">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Label>
+                  <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/notification_50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets left="30.0" right="30.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox prefHeight="195.0" prefWidth="1067.0" spacing="20.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;">
+               <VBox.margin>
+                  <Insets bottom="15.0" top="15.0" />
+               </VBox.margin>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="195.0" prefWidth="1085.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="138.0" prefWidth="569.0" text="Welcome" textAlignment="CENTER" textFill="#f8aba4" wrapText="true">
+                           <font>
+                              <Font size="47.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="424.0" prefWidth="1067.0">
+               <children>
+                  <JFXTreeTableView prefHeight="424.0" prefWidth="1104.0" />
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets left="30.0" right="30.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
